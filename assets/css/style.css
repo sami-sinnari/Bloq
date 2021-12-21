@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 
-.body{
-    font-family: "Rajdhan", sans-serif;
+body{
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: black;
 }
 
@@ -16,12 +18,49 @@ a {
     text-decoration: none;
   }
 
-.flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
 img {
     width: 100%;
 }
+
+li {
+    list-style-type: none;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: visible;
+}
+
+.navbar{
+    background-color: blue;
+    height: 80px;
+    padding: 0 30px;
+}
+
+.navbar .logo {
+  font-size: 50px;
+  font-family: 'Inspiration', sans-serif;
+  color: white;
+  margin: 10px 0; /* This is making a line above - will fix it*/
+  line-height: 1.2;
+}
+
+/* Used flex to put links on the right side of the navbar with space-between */
+.navbar .flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+  }
