@@ -33,7 +33,7 @@ li {
 }
 
 .navbar{
-    background-color: blue;
+    background-color: rgba(4, 4, 250, 0.733);
     height: 80px;
     padding: 0 30px;
 }
@@ -44,6 +44,13 @@ li {
   color: white;
   margin: 10px 0; /* This is making a line above - will fix it*/
   line-height: 1.2;
+}
+
+.navbar .logo:hover{
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+    border-right: 5px dotted rgb(255, 255, 255);
+    padding-right: 30px;
 }
 
 /* Used flex to put links on the right side of the navbar with space-between */
@@ -59,8 +66,15 @@ li {
     justify-content: space-evenly;
 }
 
-.navbar a {
+.navbar .nav-links {
     color: white;
     padding: 9px;
     margin: 0 10px;
+  }
+
+.navbar .nav-links:hover {
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    border-top: 5px dotted rgb(255, 255, 255);
+    border-radius: 0.3px;
   }
