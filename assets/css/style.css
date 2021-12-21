@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Rajdhani&display=swap');
 
+/* -------- Basic CSS -------- */
+
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +28,8 @@ li {
     list-style-type: none;
 }
 
+/* -------- Navbar -------- */
+
 .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -48,9 +52,9 @@ li {
 
 .navbar .logo:hover{
     color: #ffffff;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
     border-right: 5px dotted rgb(255, 255, 255);
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 /* Used flex to put links on the right side of the navbar with space-between */
@@ -77,4 +81,29 @@ li {
     transition: 0.2s ease-in-out;
     border-top: 5px dotted rgb(255, 255, 255);
     border-radius: 0.3px;
+  }
+
+/* -------- Landing/Home page -------- */
+
+.landing-page{
+    height: 300px;
+    background-color: rgba(4, 4, 250, 0.733);
+} 
+
+.landing-page img{
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+
+}
+
+.grid {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: white;
+  }
+
+  .grid-1,
+  .grid-2{
+      position: relative;
+      top: 100px;
   }
