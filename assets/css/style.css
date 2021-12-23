@@ -84,7 +84,7 @@ li {
     border-radius: 0.3px;
   }
 
-/* -------- Landing/Home page -------- */
+/* -------- Landing/Home  -------- */
 
 .landing-page {
     height: 300px;
@@ -118,11 +118,11 @@ li {
       font-size: 45px;
   }
 
- /* -------- About page -------- */
+ /* -------- About  -------- */
 .about {
-    position: relative;
-    top: 600px;
+    margin-top: 600px;
 }
+
 .about-title {
     font-family: 'Vujahday Script', cursive;
     font-size: 45px;
@@ -132,12 +132,47 @@ li {
     margin: 5rem auto;
     width: min(90%, 75rem);
     display: grid;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
     gap: 1em;
 }
 
-@media (min-width: 55em) {
+.about-grid img {
+    width: 70px;
+    height: 70px;
+}
+
+
+ /* -------- gallery -------- */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+
+
+ /* -------- social links -------- */
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 2em;
+}
+
+/* -------- Media Q  -------- */
+@media (max-width: 700px) {
     .about-grid {
-        grid-auto-flow: column;
+        grid-auto-flow: row;
+    }
+
+    .gallery {
+        grid-template-columns: 9fr;
+        padding: 30px;
+        gap: 2em;
     }
 }
