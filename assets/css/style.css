@@ -143,13 +143,32 @@ li {
 
 
  /* -------- gallery -------- */
+
+.gallery-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Vujahday Script', cursive;
+    padding: 60px 0px 30px;
+    font-size: 3.2em;
+    font-weight: 500;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
 }
 
+.gallery p {
+    font-family: 'Inspiration', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
 
+.gallery img {
+    border-radius: 20px;
+}
 
  /* -------- social links -------- */
 
@@ -165,7 +184,7 @@ li {
 }
 
 /* -------- Media Q  -------- */
-@media (max-width: 700px) {
+@media (max-width: 820px) {
     .about-grid {
         grid-auto-flow: row;
     }
@@ -174,5 +193,20 @@ li {
         grid-template-columns: 9fr;
         padding: 30px;
         gap: 2em;
+    }
+
+    .gallery img {
+        border-radius: 40px;
+    }
+
+    .gallery-title{
+        font-size: 26px;
+        font-weight: 500;
+        word-break: keep-all;
+    }
+
+    .gallery p {
+        font-size: 50px;
+
     }
 }
