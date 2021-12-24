@@ -1,3 +1,4 @@
+/* -------- Fonts -------- */
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
 
@@ -123,9 +124,22 @@ li {
     margin-top: 600px;
 }
 
+.details {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.details p {
+    font-size: 1.2em;
+    padding: 30px 30px;
+    text-align: center;
+}
+
 .about-title {
     font-family: 'Vujahday Script', cursive;
     font-size: 45px;
+    text-align: center;
+    padding: 20px;
 }
 
 .about-grid {
@@ -133,7 +147,7 @@ li {
     width: min(90%, 75rem);
     display: grid;
     grid-auto-flow: column;
-    gap: 1em;
+    gap: 0.9em;
 }
 
 .about-grid img {
@@ -144,10 +158,8 @@ li {
 
  /* -------- gallery -------- */
 
-.gallery-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.section-title{
+    text-align: center;
     font-family: 'Vujahday Script', cursive;
     padding: 60px 0px 30px;
     font-size: 3.2em;
@@ -184,9 +196,16 @@ li {
 }
 
 /* -------- Media Q  -------- */
+
+
+
 @media (max-width: 820px) {
     .about-grid {
         grid-auto-flow: row;
+    }
+
+    .about-title{
+        font-size: 2em;
     }
 
     .gallery {
@@ -200,13 +219,21 @@ li {
     }
 
     .gallery-title{
-        font-size: 26px;
+        font-size: 45px;
         font-weight: 500;
         word-break: keep-all;
     }
 
     .gallery p {
         font-size: 50px;
+    }
+}
 
+
+@media (max-width: 620px) {
+    .gallery-title{
+        font-size: 45px;
+        font-weight: 500;
+        word-break: keep-all;
     }
 }
