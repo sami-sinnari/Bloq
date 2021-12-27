@@ -201,7 +201,7 @@ li {
 }
 
 .btn:hover {
-    background-color: rgba(22, 22, 22, 0.73);
+    background-color: rgba(107, 106, 106, 0.73);
     color: white;
     transition: 0.3s cubic-bezier(.6,-0.28,.74,.05);
 }
@@ -209,6 +209,81 @@ li {
 .btn a:hover {
     color: white;
 }
+
+  /* ------ Contact section  ------ */
+  
+  .contact_section{
+    background: url(../images/message.jpeg) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+  
+  .contact_section h1{
+    text-align: center;
+    color: #6b6a6aba;
+  }
+  
+  .contact_form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact_form_text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgba(230, 234, 236, 0.534);
+    padding: 20px 40px;
+    outline: none;
+    color: #6b6a6aba;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: "Architects Daughter", sans-serif;
+    border-radius: 20px;
+  }
+
+    .contact_section_title{
+    padding-top: 2em;
+    text-align: center;
+    font-size: 30px;
+    color:#6b6a6aba;
+  }
+  
+  .contact_form_text:focus{
+    box-shadow: 0 0 10px 4px #6b6a6aba;
+    border-radius: 40px;
+  }
+
+  textarea.contact_form_text{
+    resize: none;
+    height: 140px;
+  }
+
+  .contact_form_btn{
+  font-size: 18px;
+  color: #fdfdfd;
+  background: #6b6a6aba;
+  border: none;
+  padding: 14px 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  }
+
+  .contact_form-btn:hover {
+    transition: 0.5s ease-in-out;
+    background: rgb(180, 176, 176);
+    color: #dce2e9;
+    cursor: pointer;
+  }
 
  /* -------- social links -------- */
 
@@ -238,7 +313,7 @@ li {
 
 .social-links i:hover {
     color: rgba(68, 68, 68, 0.404);
-    transition: 0.2s ease-in-out;
+    transition: 0.12s ease-in-out;
     border-top: 5px dotted rgb(255, 255, 255);
     border-radius: 0.3px;
     padding-top: 3px;
