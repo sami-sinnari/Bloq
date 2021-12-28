@@ -251,6 +251,10 @@ li {
     border-radius: 20px;
   }
 
+  .contact_form_text::placeholder {
+    text-shadow: 1px 1px #000;
+  }
+
     .contact_section_title{
     padding-top: 1em;
     text-shadow: 1px 2px black;
@@ -330,6 +334,7 @@ li {
     .grid {
         grid-template-columns:  1fr;
     }
+
     .grid-1 {
         padding: 30px;
     }
@@ -386,6 +391,11 @@ li {
 @media (max-width: 620px) {
     .navbar .flex-nav {
         flex-direction: column;
+        gap: 2.2em;
+    }
+
+    .navbar .logo:hover {
+        border: none;
     }
 
     .gallery-title{
