@@ -45,7 +45,7 @@ li {
 }
 
 .navbar .logo {
-  font-size: 50px;
+  font-size: 60px;
   font-family: 'Inspiration', sans-serif;
   color: white;
   margin: 10px 0; /* This is making a line above - will fix it*/
@@ -76,6 +76,7 @@ li {
     color: white;
     padding: 9px;
     margin: 0 10px;
+    font-size: 18px;
   }
 
 .navbar .nav-links:hover {
@@ -325,8 +326,34 @@ li {
 /* -------- Media Q  -------- */
 
 
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns:  1fr;
+    }
+    .grid-1 {
+        padding: 30px;
+    }
 
-@media (max-width: 820px) {
+    .landing-page {
+        height: 500px;
+    }
+    
+    .grid .image-field {
+        padding: 10px;
+        width: 50%;
+    }
+    
+    .navbar .nav-links {
+        color: white;
+        padding: 9px;
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+    .about {
+        margin-top: 60%;
+    }
+
     .about-grid {
         grid-auto-flow: row;
     }
@@ -356,8 +383,26 @@ li {
     }
 }
 
-
 @media (max-width: 620px) {
+    .navbar .flex-nav {
+        flex-direction: column;
+    }
+
+    .gallery-title{
+        font-size: 45px;
+        font-weight: 500;
+        word-break: keep-all;
+    }
+
+    .grid .image-field {
+        width: 50%;
+        display: grid;
+        justify-items: right;
+    }
+}
+
+
+@media (max-width: 520px) {
     .gallery-title{
         font-size: 45px;
         font-weight: 500;
