@@ -236,24 +236,27 @@ li {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    margin: 16px 0;
+    margin: 20px 0;
     border: 0;
-    background: rgba(230, 234, 236, 0.534);
-    padding: 20px 40px;
+    background: rgba(129, 127, 127, 0.096);
+    padding: 30px 40px;
     outline: none;
-    color: #6b6a6aba;
-    font-size: 15px;
-    font-weight: 600;
+    color: #585858;
+    box-shadow: 10px 10px black;
+    font-size: 20px;
+    text-align: right;
     transition: 0.5s;
-    font-family: "Architects Daughter", sans-serif;
+    font-weight: 900;
     border-radius: 20px;
   }
 
     .contact_section_title{
-    padding-top: 2em;
+    padding-top: 1em;
+    text-shadow: 1px 2px black;
     text-align: center;
-    font-size: 30px;
-    color:#6b6a6aba;
+    font-size: 50px;
+    color:#4d4b4b;
+    font-family: 'Vujahday Script', cursive;
   }
   
   .contact_form_text:focus{
@@ -268,7 +271,7 @@ li {
 
   .contact_form_btn{
   font-size: 18px;
-  color: #fdfdfd;
+  color: #ffffff;
   background: #6b6a6aba;
   border: none;
   padding: 14px 30px;
